@@ -13,6 +13,9 @@
 		ABB316A8267FFD8E00521AB4 /* PostDomainRepoInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316A5267FFD8E00521AB4 /* PostDomainRepoInterface.swift */; };
 		ABB316A9267FFD8E00521AB4 /* PostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316A6267FFD8E00521AB4 /* PostInteractor.swift */; };
 		ABB316AA267FFD8E00521AB4 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316A7267FFD8E00521AB4 /* PostEntity.swift */; };
+		ABB316C526800C6D00521AB4 /* PostDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316C426800C6D00521AB4 /* PostDetailInteractor.swift */; };
+		ABB316C726800C7600521AB4 /* PostDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316C626800C7600521AB4 /* PostDetailEntity.swift */; };
+		ABB316C926800C9400521AB4 /* PostDetailDomainRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316C826800C9400521AB4 /* PostDetailDomainRepo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 		ABB316A5267FFD8E00521AB4 /* PostDomainRepoInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDomainRepoInterface.swift; sourceTree = "<group>"; };
 		ABB316A6267FFD8E00521AB4 /* PostInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostInteractor.swift; sourceTree = "<group>"; };
 		ABB316A7267FFD8E00521AB4 /* PostEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
+		ABB316C426800C6D00521AB4 /* PostDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailInteractor.swift; sourceTree = "<group>"; };
+		ABB316C626800C7600521AB4 /* PostDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailEntity.swift; sourceTree = "<group>"; };
+		ABB316C826800C9400521AB4 /* PostDetailDomainRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailDomainRepo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		ABB3165E267FFC3600521AB4 /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				ABB316C326800C5500521AB4 /* PostDetail */,
 				ABB316A4267FFD8E00521AB4 /* Posts */,
 				ABB3165F267FFC3600521AB4 /* domain.h */,
 				ABB31660267FFC3600521AB4 /* Info.plist */,
@@ -101,6 +108,16 @@
 				ABB316A7267FFD8E00521AB4 /* PostEntity.swift */,
 			);
 			path = Posts;
+			sourceTree = "<group>";
+		};
+		ABB316C326800C5500521AB4 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				ABB316C426800C6D00521AB4 /* PostDetailInteractor.swift */,
+				ABB316C626800C7600521AB4 /* PostDetailEntity.swift */,
+				ABB316C826800C9400521AB4 /* PostDetailDomainRepo.swift */,
+			);
+			path = PostDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +229,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABB316A9267FFD8E00521AB4 /* PostInteractor.swift in Sources */,
+				ABB316C526800C6D00521AB4 /* PostDetailInteractor.swift in Sources */,
 				ABB316AA267FFD8E00521AB4 /* PostEntity.swift in Sources */,
 				ABB316A8267FFD8E00521AB4 /* PostDomainRepoInterface.swift in Sources */,
+				ABB316C926800C9400521AB4 /* PostDetailDomainRepo.swift in Sources */,
+				ABB316C726800C7600521AB4 /* PostDetailEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

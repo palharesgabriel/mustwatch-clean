@@ -14,6 +14,9 @@
 		ABB3169D267FFCB400521AB4 /* data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ABB3169B267FFCB400521AB4 /* data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ABB316B0267FFD9D00521AB4 /* PostVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316AD267FFD9D00521AB4 /* PostVM.swift */; };
 		ABB316B1267FFD9D00521AB4 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316AE267FFD9D00521AB4 /* PostView.swift */; };
+		ABB316C026800C2F00521AB4 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316BF26800C2F00521AB4 /* PostDetailView.swift */; };
+		ABB316C226800C3A00521AB4 /* PostDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316C126800C3A00521AB4 /* PostDetailVM.swift */; };
+		ABB316D72680148200521AB4 /* AppDIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316D62680148200521AB4 /* AppDIInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		ABB3169B267FFCB400521AB4 /* data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB316AD267FFD9D00521AB4 /* PostVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVM.swift; sourceTree = "<group>"; };
 		ABB316AE267FFD9D00521AB4 /* PostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		ABB316BF26800C2F00521AB4 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		ABB316C126800C3A00521AB4 /* PostDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailVM.swift; sourceTree = "<group>"; };
+		ABB316D62680148200521AB4 /* AppDIInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,8 @@
 		ABB31682267FFC5D00521AB4 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				ABB316D52680146A00521AB4 /* Common */,
+				ABB316BE26800C2000521AB4 /* PostDetail */,
 				ABB316AB267FFD9D00521AB4 /* Post */,
 				ABB31683267FFC5D00521AB4 /* presentation.h */,
 				ABB31684267FFC5D00521AB4 /* Info.plist */,
@@ -125,6 +133,23 @@
 				ABB316AE267FFD9D00521AB4 /* PostView.swift */,
 			);
 			path = Post;
+			sourceTree = "<group>";
+		};
+		ABB316BE26800C2000521AB4 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				ABB316BF26800C2F00521AB4 /* PostDetailView.swift */,
+				ABB316C126800C3A00521AB4 /* PostDetailVM.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		ABB316D52680146A00521AB4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ABB316D62680148200521AB4 /* AppDIInterface.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB316C026800C2F00521AB4 /* PostDetailView.swift in Sources */,
+				ABB316C226800C3A00521AB4 /* PostDetailVM.swift in Sources */,
 				ABB316B0267FFD9D00521AB4 /* PostVM.swift in Sources */,
 				ABB316B1267FFD9D00521AB4 /* PostView.swift in Sources */,
+				ABB316D72680148200521AB4 /* AppDIInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

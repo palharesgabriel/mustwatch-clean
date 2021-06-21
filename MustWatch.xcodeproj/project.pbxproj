@@ -27,6 +27,7 @@
 		AB00236C267D85B200C52BC4 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00236B267D85B200C52BC4 /* AppEnvironment.swift */; };
 		AB00236F267D85FE00C52BC4 /* PostDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00236E267D85FE00C52BC4 /* PostDI.swift */; };
 		AB002371267D86E400C52BC4 /* AppDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB002370267D86E400C52BC4 /* AppDI.swift */; };
+		ABB316D426800D7A00521AB4 /* PostDetailDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316D326800D7A00521AB4 /* PostDetailDI.swift */; };
 		E0C5DD08553598013C10C674 /* Pods_MustWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55EB052AFA3B052D368309B /* Pods_MustWatch.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		AB00236B267D85B200C52BC4 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		AB00236E267D85FE00C52BC4 /* PostDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDI.swift; sourceTree = "<group>"; };
 		AB002370267D86E400C52BC4 /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
+		ABB316D326800D7A00521AB4 /* PostDetailDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailDI.swift; sourceTree = "<group>"; };
 		B55EB052AFA3B052D368309B /* Pods_MustWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MustWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0EAB65330EA4703D240DEE /* Pods-MustWatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MustWatchTests.release.xcconfig"; path = "Target Support Files/Pods-MustWatchTests/Pods-MustWatchTests.release.xcconfig"; sourceTree = "<group>"; };
 		D1EFA19645A1DD8B7A045BCE /* Pods-MustWatch-MustWatchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MustWatch-MustWatchUITests.release.xcconfig"; path = "Target Support Files/Pods-MustWatch-MustWatchUITests/Pods-MustWatch-MustWatchUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			children = (
 				AB00236E267D85FE00C52BC4 /* PostDI.swift */,
 				AB002370267D86E400C52BC4 /* AppDI.swift */,
+				ABB316D326800D7A00521AB4 /* PostDetailDI.swift */,
 			);
 			path = AppDI;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				AB00236F267D85FE00C52BC4 /* PostDI.swift in Sources */,
 				AB00236C267D85B200C52BC4 /* AppEnvironment.swift in Sources */,
 				AB002249267CA82400C52BC4 /* AppDelegate.swift in Sources */,
+				ABB316D426800D7A00521AB4 /* PostDetailDI.swift in Sources */,
 				AB00224B267CA82400C52BC4 /* SceneDelegate.swift in Sources */,
 				AB002250267CA82400C52BC4 /* MustWatch.xcdatamodeld in Sources */,
 				AB00224D267CA82400C52BC4 /* ContentView.swift in Sources */,

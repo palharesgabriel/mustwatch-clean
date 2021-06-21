@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        let postView = PostView(postVM: AppDI.shared.postDependencies())
+        let postView = PostView(appDI: AppDI.shared, postVM: AppDI.shared.postDependencies())
         
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)

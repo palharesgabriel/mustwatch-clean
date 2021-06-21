@@ -9,7 +9,7 @@ import Foundation
 import presentation
 
 
-class AppDI {
+class AppDI: AppDIInterface {
     
     static let shared = AppDI(appEnvironment: AppEnvironment())
     
@@ -20,12 +20,15 @@ class AppDI {
     }
     
     func postDependencies() -> PostVM {
-                
         let postDI: PostDI = PostDI(appEnvironment: appEnvironment)
-        
         let postVM = postDI.postDependencies()
-                
         return postVM
+    }
+    
+    func postDetailDependencies() -> PostDetailVM {
+        let postDetailsDI: PostDetailDI = PostDetailDI(appEnvironment: appEnvironment)
+        let postDetailsVM = postDetailsDI.postDetailDependencies()
+        return postDetailsVM
     }
     
 }

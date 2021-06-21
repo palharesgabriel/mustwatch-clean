@@ -17,6 +17,10 @@
 		ABB316BB267FFDB100521AB4 /* PostDataRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316B5267FFDB100521AB4 /* PostDataRepo.swift */; };
 		ABB316BC267FFDB100521AB4 /* PostRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316B6267FFDB100521AB4 /* PostRemoteDataSource.swift */; };
 		ABB316BD267FFDB100521AB4 /* Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316B8267FFDB100521AB4 /* Coder.swift */; };
+		ABB316CC26800CD300521AB4 /* PostDetailDataRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316CB26800CD300521AB4 /* PostDetailDataRepo.swift */; };
+		ABB316CE26800D0200521AB4 /* PostDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316CD26800D0200521AB4 /* PostDetailModel.swift */; };
+		ABB316D026800D2E00521AB4 /* PostDetailRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316CF26800D2E00521AB4 /* PostDetailRemoteDataSource.swift */; };
+		ABB316D226800D5000521AB4 /* PostDetailLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316D126800D5000521AB4 /* PostDetailLocalDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		ABB316B5267FFDB100521AB4 /* PostDataRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDataRepo.swift; sourceTree = "<group>"; };
 		ABB316B6267FFDB100521AB4 /* PostRemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRemoteDataSource.swift; sourceTree = "<group>"; };
 		ABB316B8267FFDB100521AB4 /* Coder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coder.swift; sourceTree = "<group>"; };
+		ABB316CB26800CD300521AB4 /* PostDetailDataRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailDataRepo.swift; sourceTree = "<group>"; };
+		ABB316CD26800D0200521AB4 /* PostDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailModel.swift; sourceTree = "<group>"; };
+		ABB316CF26800D2E00521AB4 /* PostDetailRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailRemoteDataSource.swift; sourceTree = "<group>"; };
+		ABB316D126800D5000521AB4 /* PostDetailLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailLocalDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 		ABB3163A267FFBEF00521AB4 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				ABB316CA26800CA400521AB4 /* PostDetail */,
 				ABB316B7267FFDB100521AB4 /* Common */,
 				ABB316B2267FFDB100521AB4 /* Post */,
 				ABB3163B267FFBEF00521AB4 /* data.h */,
@@ -142,6 +151,17 @@
 				ABB316B8267FFDB100521AB4 /* Coder.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		ABB316CA26800CA400521AB4 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				ABB316CB26800CD300521AB4 /* PostDetailDataRepo.swift */,
+				ABB316CD26800D0200521AB4 /* PostDetailModel.swift */,
+				ABB316CF26800D2E00521AB4 /* PostDetailRemoteDataSource.swift */,
+				ABB316D126800D5000521AB4 /* PostDetailLocalDataSource.swift */,
+			);
+			path = PostDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,10 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB316CE26800D0200521AB4 /* PostDetailModel.swift in Sources */,
 				ABB316B9267FFDB100521AB4 /* PostLocalDataSource.swift in Sources */,
 				ABB316BD267FFDB100521AB4 /* Coder.swift in Sources */,
+				ABB316CC26800CD300521AB4 /* PostDetailDataRepo.swift in Sources */,
 				ABB316BA267FFDB100521AB4 /* PostModel.swift in Sources */,
+				ABB316D226800D5000521AB4 /* PostDetailLocalDataSource.swift in Sources */,
 				ABB316BC267FFDB100521AB4 /* PostRemoteDataSource.swift in Sources */,
+				ABB316D026800D2E00521AB4 /* PostDetailRemoteDataSource.swift in Sources */,
 				ABB316BB267FFDB100521AB4 /* PostDataRepo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
