@@ -7,16 +7,25 @@
 
 import SwiftUI
 
-struct PostDetailView: View {
+struct PostDetailView: UIViewRepresentable {
     
-    @ObservedObject public var postDetailVM: PostDetailVM
+    typealias UIViewType = PostDetailUIKitView
     
-    public init(postDetailVM: PostDetailVM) {
-
-        self.postDetailVM = postDetailVM
+    private var appDI: AppDIInterface
+    private var description: String
+    
+    public init(appDI: AppDIInterface, description: String) {
+        self.appDI = appDI
+        self.description = description
     }
     
-    var body: some View {
-        Text(postDetailVM.details)
+    func makeUIView(context: Context) -> PostDetailUIKitView {
+        let detailView = PostDetailUIKitView(postDetailVM: appDI.postDetailDependencies(description: description))
+        return detailView
     }
+    
+    func updateUIView(_ uiView: PostDetailUIKitView, context: Context) {
+        //
+    }
+        
 }

@@ -25,9 +25,9 @@ class AppDI: AppDIInterface {
         return postVM
     }
     
-    func postDetailDependencies() -> PostDetailVM {
+    func postDetailDependencies(description: String) -> PostDetailVM {
         let postDetailsDI: PostDetailDI = PostDetailDI(appEnvironment: appEnvironment)
-        let postDetailsVM = postDetailsDI.postDetailDependencies()
+        let postDetailsVM = postDetailsDI.postDetailDependencies(description: description)
         return postDetailsVM
     }
     

@@ -10,10 +10,11 @@ import SwiftUI
 public struct PostView: View {
     
     var appDI: AppDIInterface
+    
+    @State var currentDescription: String = .init()
+    
     @ObservedObject public var postVM: PostVM
-    
-    @State var detailsIsPresented: Bool = false
-    
+        
     public init(appDI: AppDIInterface, postVM: PostVM) {
         self.appDI = appDI
         self.postVM = postVM
@@ -21,28 +22,22 @@ public struct PostView: View {
     
     public var body: some View {
         NavigationView {
-            List {
-                
-                ForEach(postVM.posts) { post in
-                    VStack{
+            List(postVM.posts) { post in
+                NavigationLink(destination: PostDetailView(appDI: appDI, description: post.body)) {
+                    VStack {
                         Text(post.title ?? "")
                             .font(.largeTitle)
                             .multilineTextAlignment(.center)
                         
-                        Text(post.body )
+                        Text(post.body)
                             .font(.body)
                             .multilineTextAlignment(.center)
                     }
-                }.onTapGesture {
-                    self.detailsIsPresented = true
                 }
             }
-            .sheet(isPresented: $detailsIsPresented, content: {
-                PostDetailView(postDetailVM: self.appDI.postDetailDependencies())
-            })
             .navigationBarTitle("Posts")
         }
-            
+        
         .onAppear {
             self.postVM.getPosts()
         }

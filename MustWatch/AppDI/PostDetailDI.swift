@@ -17,8 +17,8 @@ class PostDetailDI {
         self.appEnvironment = appEnvironment
     }
     
-    func postDetailDependencies() -> PostDetailVM {
-        let postDetailsVM = PostDetailVM()
+    func postDetailDependencies(description: String) -> PostDetailVM {
+        let postDetailsVM = PostDetailVM(description: description)
         return postDetailsVM
     }
 }

@@ -10,7 +10,10 @@ import Foundation
 public class PostDetailVM: ObservableObject {
     
     @Published var details = "My details"
+    @Published var description: String
     
-    // So we can initialize it from the app layer
-    public init() { }
+    // Modificador público que permite a inicialização a partir da App layer
+    public init(description: String) {
+        self.description = description
+    }
 }

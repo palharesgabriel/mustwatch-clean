@@ -17,6 +17,7 @@
 		ABB316C026800C2F00521AB4 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316BF26800C2F00521AB4 /* PostDetailView.swift */; };
 		ABB316C226800C3A00521AB4 /* PostDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316C126800C3A00521AB4 /* PostDetailVM.swift */; };
 		ABB316D72680148200521AB4 /* AppDIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316D62680148200521AB4 /* AppDIInterface.swift */; };
+		ABE18B3E26E52BD600B99B97 /* PostDetailUIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE18B3D26E52BD600B99B97 /* PostDetailUIKitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		ABB316BF26800C2F00521AB4 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		ABB316C126800C3A00521AB4 /* PostDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailVM.swift; sourceTree = "<group>"; };
 		ABB316D62680148200521AB4 /* AppDIInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIInterface.swift; sourceTree = "<group>"; };
+		ABE18B3D26E52BD600B99B97 /* PostDetailUIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailUIKitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				ABB316BF26800C2F00521AB4 /* PostDetailView.swift */,
 				ABB316C126800C3A00521AB4 /* PostDetailVM.swift */,
+				ABE18B3D26E52BD600B99B97 /* PostDetailUIKitView.swift */,
 			);
 			path = PostDetail;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE18B3E26E52BD600B99B97 /* PostDetailUIKitView.swift in Sources */,
 				ABB316C026800C2F00521AB4 /* PostDetailView.swift in Sources */,
 				ABB316C226800C3A00521AB4 /* PostDetailVM.swift in Sources */,
 				ABB316B0267FFD9D00521AB4 /* PostVM.swift in Sources */,

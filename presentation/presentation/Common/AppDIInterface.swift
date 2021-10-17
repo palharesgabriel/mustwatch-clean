@@ -9,5 +9,5 @@ import Foundation
 
 public protocol AppDIInterface {
     func postDependencies() -> PostVM
-    func postDetailDependencies() -> PostDetailVM
+    func postDetailDependencies(description: String) -> PostDetailVM
 }
