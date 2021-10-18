@@ -22,10 +22,10 @@ class PostDI {
         // Data Layer
         let baseURL = appEnvironment.baseURL
         
-        // Post Data Source
+        // Data Source
         let postRemoteDataSource = PostRemoteDataSource(urlString: baseURL)
         
-        // Post Data Repo
+        // Data Repo
         let postDataRepo = PostDataRepo(postRemoteDataSource: postRemoteDataSource)
         
         // Domain Layer

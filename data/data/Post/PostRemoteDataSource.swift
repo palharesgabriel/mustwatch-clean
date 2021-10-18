@@ -10,7 +10,7 @@ import domain
 
 public protocol PostRemoteDataSourceInterface {
     
-    init(urlString: String, coder: Coder)
+    init(urlString: String, coder: Coder, session: URLSession)
     
     func getPosts(handler: @escaping ([PostModel]) -> ())
 }
@@ -18,12 +18,16 @@ public protocol PostRemoteDataSourceInterface {
 
 public class PostRemoteDataSource: PostRemoteDataSourceInterface {
     
-    let urlString: String
-    let coder: Coder
+    private let urlString: String
+    private let coder: Coder
+    private let session: URLSession
     
-    required public init(urlString: String, coder: Coder = Coder()) {
+    required public init(urlString: String,
+                         coder: Coder = Coder(),
+                         session: URLSession = .shared) {
         self.urlString = urlString
         self.coder = coder
+        self.session = session
     }
     
     public func getPosts(handler: @escaping ([PostModel]) -> ()) {
@@ -32,7 +36,7 @@ public class PostRemoteDataSource: PostRemoteDataSourceInterface {
             return handler([])
         }
         
-        let task = URLSession.shared.dataTask(with: url) { [weak self] (data, urlResponse, error) in
+        let task = session.dataTask(with: url) { [weak self] (data, urlResponse, error) in
             
             guard let data = data else {
                 return handler([])

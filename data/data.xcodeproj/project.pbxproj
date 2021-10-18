@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		ABB31642267FFBEF00521AB4 /* data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB31638267FFBEF00521AB4 /* data.framework */; };
-		ABB31647267FFBEF00521AB4 /* dataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB31646267FFBEF00521AB4 /* dataTests.swift */; };
 		ABB31649267FFBEF00521AB4 /* data.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB3163B267FFBEF00521AB4 /* data.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABB316A1267FFCDF00521AB4 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB316A0267FFCDF00521AB4 /* domain.framework */; };
 		ABB316A2267FFCDF00521AB4 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ABB316A0267FFCDF00521AB4 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -21,6 +20,8 @@
 		ABB316CE26800D0200521AB4 /* PostDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316CD26800D0200521AB4 /* PostDetailModel.swift */; };
 		ABB316D026800D2E00521AB4 /* PostDetailRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316CF26800D2E00521AB4 /* PostDetailRemoteDataSource.swift */; };
 		ABB316D226800D5000521AB4 /* PostDetailLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316D126800D5000521AB4 /* PostDetailLocalDataSource.swift */; };
+		ABDE672D271CE4B9008ADCB9 /* PostDataRepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDE672C271CE4B9008ADCB9 /* PostDataRepoTests.swift */; };
+		ABDE6730271CE621008ADCB9 /* PostDataRemoteMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDE672F271CE621008ADCB9 /* PostDataRemoteMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +53,6 @@
 		ABB3163B267FFBEF00521AB4 /* data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = data.h; sourceTree = "<group>"; };
 		ABB3163C267FFBEF00521AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABB31641267FFBEF00521AB4 /* dataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABB31646267FFBEF00521AB4 /* dataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataTests.swift; sourceTree = "<group>"; };
 		ABB31648267FFBEF00521AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABB316A0267FFCDF00521AB4 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB316B3267FFDB100521AB4 /* PostLocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostLocalDataSource.swift; sourceTree = "<group>"; };
@@ -64,6 +64,8 @@
 		ABB316CD26800D0200521AB4 /* PostDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailModel.swift; sourceTree = "<group>"; };
 		ABB316CF26800D2E00521AB4 /* PostDetailRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailRemoteDataSource.swift; sourceTree = "<group>"; };
 		ABB316D126800D5000521AB4 /* PostDetailLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailLocalDataSource.swift; sourceTree = "<group>"; };
+		ABDE672C271CE4B9008ADCB9 /* PostDataRepoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataRepoTests.swift; sourceTree = "<group>"; };
+		ABDE672F271CE621008ADCB9 /* PostDataRemoteMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataRemoteMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +122,8 @@
 		ABB31645267FFBEF00521AB4 /* dataTests */ = {
 			isa = PBXGroup;
 			children = (
-				ABB31646267FFBEF00521AB4 /* dataTests.swift */,
+				ABDE672E271CE5E1008ADCB9 /* Mock */,
+				ABDE672B271CE474008ADCB9 /* DataRepo */,
 				ABB31648267FFBEF00521AB4 /* Info.plist */,
 			);
 			path = dataTests;
@@ -162,6 +165,22 @@
 				ABB316D126800D5000521AB4 /* PostDetailLocalDataSource.swift */,
 			);
 			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		ABDE672B271CE474008ADCB9 /* DataRepo */ = {
+			isa = PBXGroup;
+			children = (
+				ABDE672C271CE4B9008ADCB9 /* PostDataRepoTests.swift */,
+			);
+			path = DataRepo;
+			sourceTree = "<group>";
+		};
+		ABDE672E271CE5E1008ADCB9 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				ABDE672F271CE621008ADCB9 /* PostDataRemoteMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +308,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABB31647267FFBEF00521AB4 /* dataTests.swift in Sources */,
+				ABDE672D271CE4B9008ADCB9 /* PostDataRepoTests.swift in Sources */,
+				ABDE6730271CE621008ADCB9 /* PostDataRemoteMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
