@@ -16,6 +16,7 @@ public protocol PostInteractorInterface {
 public class PostInteractor: PostInteractorInterface {
         
     let postDomainRepo: PostDomainRepoInterface
+    let kForbiddenWords: [String] = ["Abacaxi", "Banana", "Pimenta"]
     
     public init(postDomainRepo: PostDomainRepoInterface) {
         
@@ -28,7 +29,25 @@ public class PostInteractor: PostInteractorInterface {
         // Aqui é onde implementamos nossas regras, como checar conteúdo de posts e etc
         
         postDomainRepo.getPosts { (PostDomainModelArray) in
-            handler(PostDomainModelArray)
+            let cleanPosts = self.clearForbiddenWords(PostDomainModelArray)
+            handler(cleanPosts)
+        }
+    }
+    
+    private func clearForbiddenWords(_ posts: [PostEntity]) -> [PostEntity] {
+        posts.map { post in
+            
+            guard let title = post.title else { return post }
+            
+            let words = title.components(separatedBy: " ")
+            
+            let forbiddenWordsFounded = words.filter { kForbiddenWords.contains($0) }
+            
+            if !forbiddenWordsFounded.isEmpty {
+                post.set(title: "*****")
+            }
+            
+            return post
         }
     }
 }
