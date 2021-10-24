@@ -9,14 +9,14 @@ import Foundation
 import domain
 
 
-public class PostDataRepo: PostDomainRepoInterface {
+public class PostDataRepo: PostDomainRepoProtocol {
     
-    let postRemoteDataSource: PostRemoteDataSourceInterface
-    let postLocalDataSource: PostLocalDataSourceInterface?
+    let postRemoteDataSource: PostRemoteDataSourceProtocol
+    let postLocalDataSource: PostLocalDataSourceProtocol?
     let coder: Coder
     
-    public init(postRemoteDataSource: PostRemoteDataSourceInterface,
-                postLocalDataSource: PostLocalDataSourceInterface? = nil,
+    public init(postRemoteDataSource: PostRemoteDataSourceProtocol,
+                postLocalDataSource: PostLocalDataSourceProtocol? = nil,
                 coder: Coder = Coder()) {
         
         self.postRemoteDataSource = postRemoteDataSource

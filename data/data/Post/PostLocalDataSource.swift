@@ -8,6 +8,6 @@
 import Foundation
 import domain
 
-public protocol PostLocalDataSourceInterface {
+public protocol PostLocalDataSourceProtocol {
     func getCachedPosts(handler: @escaping ([PostEntity]) -> ())
 }

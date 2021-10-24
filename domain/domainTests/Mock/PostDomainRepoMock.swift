@@ -8,7 +8,7 @@
 import Foundation
 import domain
 
-struct PostDomainRepoMock: PostDomainRepoInterface {
+struct PostDomainRepoMock: PostDomainRepoProtocol {
     
     private let numberOfPosts: Int
     private let samplePost: PostEntity

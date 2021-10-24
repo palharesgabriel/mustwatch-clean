@@ -9,13 +9,13 @@ import SwiftUI
 
 public struct PostView: View {
     
-    var appDI: AppDIInterface
+    var appDI: AppDIProtocol
     
     @State var currentDescription: String = .init()
     
     @ObservedObject public var postVM: PostVM
         
-    public init(appDI: AppDIInterface, postVM: PostVM) {
+    public init(appDI: AppDIProtocol, postVM: PostVM) {
         self.appDI = appDI
         self.postVM = postVM
     }

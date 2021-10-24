@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		ABB31666267FFC3600521AB4 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB3165C267FFC3600521AB4 /* domain.framework */; };
 		ABB3166D267FFC3600521AB4 /* domain.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB3165F267FFC3600521AB4 /* domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABB316A8267FFD8E00521AB4 /* PostDomainRepoInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316A5267FFD8E00521AB4 /* PostDomainRepoInterface.swift */; };
+		ABB316A8267FFD8E00521AB4 /* PostDomainRepoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316A5267FFD8E00521AB4 /* PostDomainRepoProtocol.swift */; };
 		ABB316A9267FFD8E00521AB4 /* PostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316A6267FFD8E00521AB4 /* PostInteractor.swift */; };
 		ABB316AA267FFD8E00521AB4 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316A7267FFD8E00521AB4 /* PostEntity.swift */; };
 		ABB316C526800C6D00521AB4 /* PostDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316C426800C6D00521AB4 /* PostDetailInteractor.swift */; };
@@ -35,7 +35,7 @@
 		ABB31660267FFC3600521AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABB31665267FFC3600521AB4 /* domainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = domainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB3166C267FFC3600521AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABB316A5267FFD8E00521AB4 /* PostDomainRepoInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDomainRepoInterface.swift; sourceTree = "<group>"; };
+		ABB316A5267FFD8E00521AB4 /* PostDomainRepoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDomainRepoProtocol.swift; sourceTree = "<group>"; };
 		ABB316A6267FFD8E00521AB4 /* PostInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostInteractor.swift; sourceTree = "<group>"; };
 		ABB316A7267FFD8E00521AB4 /* PostEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
 		ABB316C426800C6D00521AB4 /* PostDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailInteractor.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		ABB316A4267FFD8E00521AB4 /* Posts */ = {
 			isa = PBXGroup;
 			children = (
-				ABB316A5267FFD8E00521AB4 /* PostDomainRepoInterface.swift */,
+				ABB316A5267FFD8E00521AB4 /* PostDomainRepoProtocol.swift */,
 				ABB316A6267FFD8E00521AB4 /* PostInteractor.swift */,
 				ABB316A7267FFD8E00521AB4 /* PostEntity.swift */,
 			);
@@ -243,7 +243,7 @@
 				ABB316A9267FFD8E00521AB4 /* PostInteractor.swift in Sources */,
 				ABB316C526800C6D00521AB4 /* PostDetailInteractor.swift in Sources */,
 				ABB316AA267FFD8E00521AB4 /* PostEntity.swift in Sources */,
-				ABB316A8267FFD8E00521AB4 /* PostDomainRepoInterface.swift in Sources */,
+				ABB316A8267FFD8E00521AB4 /* PostDomainRepoProtocol.swift in Sources */,
 				ABB316C926800C9400521AB4 /* PostDetailDomainRepo.swift in Sources */,
 				ABB316C726800C7600521AB4 /* PostDetailEntity.swift in Sources */,
 			);

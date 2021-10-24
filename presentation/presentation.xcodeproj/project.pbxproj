@@ -16,7 +16,7 @@
 		ABB316B1267FFD9D00521AB4 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316AE267FFD9D00521AB4 /* PostView.swift */; };
 		ABB316C026800C2F00521AB4 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316BF26800C2F00521AB4 /* PostDetailView.swift */; };
 		ABB316C226800C3A00521AB4 /* PostDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316C126800C3A00521AB4 /* PostDetailVM.swift */; };
-		ABB316D72680148200521AB4 /* AppDIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316D62680148200521AB4 /* AppDIInterface.swift */; };
+		ABB316D72680148200521AB4 /* AppDIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB316D62680148200521AB4 /* AppDIProtocol.swift */; };
 		ABE18B3E26E52BD600B99B97 /* PostDetailUIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE18B3D26E52BD600B99B97 /* PostDetailUIKitView.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +56,7 @@
 		ABB316AE267FFD9D00521AB4 /* PostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		ABB316BF26800C2F00521AB4 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		ABB316C126800C3A00521AB4 /* PostDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailVM.swift; sourceTree = "<group>"; };
-		ABB316D62680148200521AB4 /* AppDIInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIInterface.swift; sourceTree = "<group>"; };
+		ABB316D62680148200521AB4 /* AppDIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIProtocol.swift; sourceTree = "<group>"; };
 		ABE18B3D26E52BD600B99B97 /* PostDetailUIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailUIKitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,7 +150,7 @@
 		ABB316D52680146A00521AB4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				ABB316D62680148200521AB4 /* AppDIInterface.swift */,
+				ABB316D62680148200521AB4 /* AppDIProtocol.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 				ABB316C226800C3A00521AB4 /* PostDetailVM.swift in Sources */,
 				ABB316B0267FFD9D00521AB4 /* PostVM.swift in Sources */,
 				ABB316B1267FFD9D00521AB4 /* PostView.swift in Sources */,
-				ABB316D72680148200521AB4 /* AppDIInterface.swift in Sources */,
+				ABB316D72680148200521AB4 /* AppDIProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

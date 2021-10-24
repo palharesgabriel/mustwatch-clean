@@ -8,7 +8,7 @@
 import Foundation
 import domain
 
-public protocol PostRemoteDataSourceInterface {
+public protocol PostRemoteDataSourceProtocol {
     
     init(urlString: String, coder: Coder, session: URLSession)
     
@@ -16,7 +16,7 @@ public protocol PostRemoteDataSourceInterface {
 }
 
 
-public class PostRemoteDataSource: PostRemoteDataSourceInterface {
+public class PostRemoteDataSource: PostRemoteDataSourceProtocol {
     
     private let urlString: String
     private let coder: Coder

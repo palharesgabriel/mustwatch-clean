@@ -8,7 +8,7 @@
 import Foundation
 @testable import data
 
-class PostDataRemoteMock: PostRemoteDataSourceInterface {
+class PostDataRemoteMock: PostRemoteDataSourceProtocol {
     
     private var numberOfPosts: Int
     private var samplePost: PostModel

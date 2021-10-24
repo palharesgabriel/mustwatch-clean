@@ -7,18 +7,18 @@
 
 import Foundation
 
-public protocol PostInteractorInterface {
+public protocol PostInteractorProtocol {
         
     func getPosts(handler: @escaping ([PostEntity]) -> ())
     
 }
 
-public class PostInteractor: PostInteractorInterface {
+public class PostInteractor: PostInteractorProtocol {
         
-    let postDomainRepo: PostDomainRepoInterface
+    let postDomainRepo: PostDomainRepoProtocol
     let kForbiddenWords: [String] = ["Abacaxi", "Banana", "Pimenta"]
     
-    public init(postDomainRepo: PostDomainRepoInterface) {
+    public init(postDomainRepo: PostDomainRepoProtocol) {
         
         self.postDomainRepo = postDomainRepo
     }

@@ -12,9 +12,9 @@ public class PostVM: ObservableObject {
     
     @Published var posts: [PostEntity] = []
     
-    private var postInteractor: PostInteractorInterface
+    private var postInteractor: PostInteractorProtocol
     
-    public init(postInteractor: PostInteractorInterface) {
+    public init(postInteractor: PostInteractorProtocol) {
         self.postInteractor = postInteractor
     }
     

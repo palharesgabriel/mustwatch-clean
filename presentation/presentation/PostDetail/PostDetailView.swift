@@ -11,10 +11,10 @@ struct PostDetailView: UIViewRepresentable {
     
     typealias UIViewType = PostDetailUIKitView
     
-    private var appDI: AppDIInterface
+    private var appDI: AppDIProtocol
     private var description: String
     
-    public init(appDI: AppDIInterface, description: String) {
+    public init(appDI: AppDIProtocol, description: String) {
         self.appDI = appDI
         self.description = description
     }

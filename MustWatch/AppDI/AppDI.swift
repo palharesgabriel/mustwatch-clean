@@ -9,7 +9,7 @@ import Foundation
 import presentation
 
 
-class AppDI: AppDIInterface {
+class AppDI: AppDIProtocol {
     
     static let shared = AppDI(appEnvironment: AppEnvironment())
     
